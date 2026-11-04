@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1,
+    maximum-scale=1,
+    viewport-fit=cover">
+
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent">
+
+  <title>Opexis Siquijor - LiveAvatar</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      overscroll-behavior: none;
+    }
+
+    #avatar-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: #000;
+    }
+
+    #avatar-container iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @supports not (height: 100dvh) {
+      #avatar-container {
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main id="avatar-container">
+    <iframe
+      src="https://embed.liveavatar.com/v1/b15ead51-8f0e-4748-955f-4547b1141474?orientation=vertical"
+      title="Opexis Siquijor LiveAvatar"
+      allow="microphone; camera; autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </main>
+
+</body>
+</html>
